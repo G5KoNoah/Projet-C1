@@ -1,0 +1,29 @@
+def add(x,y){
+    return x+y
+}
+
+def sub(x,y){
+    return x-y
+}
+
+def multiply(x,y){
+    return x*y
+}
+
+def divide(x,y){
+    return x/y
+}
+
+def modulo(x,y){
+    return x%y
+}
+
+def revenusParSec(salaireH,heureParJO,JOparAn){
+    salaireParJO = salaireH * heureParJO
+    salaireS = (salaireParJO * JOparAn) /3600
+    return salaireS
+}
+
+def calcule_net(salaire_brut){
+    return salaire_brut * (1 - 0.23)
+}
