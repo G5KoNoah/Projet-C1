@@ -7,12 +7,20 @@ rh=230
 
 assertion1 = ((365 * 3) / (24 - (16 - 8))) * (rh) > r == (e * s < r)
 
-((365 * 3) / (24 - (16 - 8))) * (rh) = 15 740,625
+assertion1Pt1 = (((365 * 3) / (24 - (16 - 8))) * (rh) > r ) # True
+assertion1Pt2 = (e * s < r) # False
 
-15 740,625 > r = True
+#assertion1 === ( assertion1Pt1 == assertion1Pt2)
+#assertion1 === (assertion1Pt1 == False)
+#assertion1 === (True == False)
 
-e * s = 12 500
+print(assertion1)
 
-e * s < r = False
+assertion2 = (365 * 3) / (4 - (12 - 8)) * (rh) > r == (e * s < r)
+
+assertion2Pt1 = (365 * 3) / (4 - (12 - 8)) * (rh) > r # False
+assertion1Pt2 = (e * s < r) # False
+
+print(assertion2)
 
 FIN
