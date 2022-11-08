@@ -98,9 +98,29 @@ def indexTableau(tableau,index):
     while i < len(tableau):
         if tableau[i] == index :
             conca(occutation,str(i))
+        i = i + 1
     return occutation
-
-
 
 print(conca("viande","frite"))
 print(indexTableau(tab,0))
+
+def affichage(ele):
+    print(ele)
+
+#tel que 
+listeUtilisateur = {
+    "Alexandre" : "motdepasse",
+    "Michel" : "password",
+    "Toto" : "12345",
+    "JhonDoe" : "azerty"
+}
+
+def login(userName, password , listUser):
+    if listUser[userName] == password :
+        print("good combo")
+        return
+    else :
+        print("bad combo")
+        return
+
+affichage(login("Alexandre", "motdepasse", listeUtilisateur))
