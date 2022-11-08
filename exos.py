@@ -63,10 +63,6 @@ while tour != 5 :
 # J'effectue l'action de passer un tour
     tour += 1
 
-def input():
-    #renvoie un caractere de type string au hasard
-    caractere = str(random.randint(0,26))
-    return caractere
 
 def minijeu(bonCaractere):
     # on definit une variable pour mon caractère aléatoire
@@ -87,8 +83,26 @@ tab = [0,10,15,5,6,7894,489]
 l = len(tab)
 #Exo 1
 #faire une fonction qui concatene 2 chaines de caractere, les separants par une virgule
+def conca(char1,char2):
+    if char1 != "":
+        charConca = char1 + ", " + char2
+        return charConca
+    return char2
+    
 #Exo 2
 #faire une fonction qui itere sur tous les index d'un tableau renvoyant une chaine de caractere avec l'ensemble des occurations d'un chiffre
 #pour tableau = [0,1,1,1,0,1,1,0,1]
 #la fonction(tableau,0) doit renvoyer "0,4,7" n'hesitez pas a implementer la premiere fonction
-def indexTableau():
+tab = [0,1,1,1,0,1,1,0,1]
+
+def indexTableau(tableau,index):
+    i = 0
+    occutation = ""
+    while i < len(tableau):
+        if tableau[i] == index :
+            conca(occutation,str(i))
+    return occutation
+
+
+
+print(conca("viande","frite"))
