@@ -76,11 +76,8 @@ def minijeu(bonCaractere):
     # on retourne le bon caractère
     return caractereAleatoire
 
-print(minijeu("5"))
 
-tab = [0,10,15,5,6,7894,489]
 
-l = len(tab)
 #Exo 1
 #faire une fonction qui concatene 2 chaines de caractere, les separants par une virgule
 def conca(char1,char2):
@@ -106,3 +103,4 @@ def indexTableau(tableau,index):
 
 
 print(conca("viande","frite"))
+print(indexTableau(tab,0))
