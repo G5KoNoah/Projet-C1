@@ -85,21 +85,39 @@ def conca(char1,char2):
         charConca = char1 + ", " + char2
         return charConca
     return char2
-    
+#Definir  une fonction avec comme paramètres : chaineA et chaineB
+#qui retourne la concatenation de chaineA, une comma et enfin chaineB
+def concatWithComma(chaineA, chaineB):
+    #Je m'assure que chaineA soit bien de type str
+    stringifiedChaineA = str(chaineA)
+    #Je m'assure que chaineB soit bien de type str
+    stringifiedChaineB = str(chaineB)
+    #Retourner chaineA concatené avec un comma et chaineB
+    return stringifiedChaineA + ", " + stringifiedChaineB
+
 #Exo 2
 #faire une fonction qui itere sur tous les index d'un tableau renvoyant une chaine de caractere avec l'ensemble des occurations d'un chiffre
 #pour tableau = [0,1,1,1,0,1,1,0,1]
 #la fonction(tableau,0) doit renvoyer "0,4,7" n'hesitez pas a implementer la premiere fonction
 tab = [0,1,1,1,0,1,1,0,1]
 
+#definir une fonction qui prend une liste et une variable  x quelconque
 def indexTableau(tableau,index):
+    #Initialser i a 0
     i = 0
-    occutation = ""
+    #Definir chaineResultat en tant que string vide
+    chaineResultat = ""
+    #Tant que i est inferieur a la longueur de tableau
     while i < len(tableau):
+        #Alors si l'elt d'index i de tableau est egal a x
         if tableau[i] == index :
-            conca(occutation,str(i))
+            #Alors on assigne a chaineResultat le retour de concatWithComma(chaineResultat, i)
+            chaineResultat = conca(chaineResultat, i) 
+        #On incremente i de 1
         i = i + 1
-    return occutation
+    #retourner la chaineResultat
+    return chaineResultat
+
 
 print(conca("viande","frite"))
 print(indexTableau(tab,0))
