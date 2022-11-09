@@ -80,11 +80,7 @@ def minijeu(bonCaractere):
 
 #Exo 1
 #faire une fonction qui concatene 2 chaines de caractere, les separants par une virgule
-def conca(char1,char2):
-    if char1 != "":
-        charConca = char1 + ", " + char2
-        return charConca
-    return char2
+
 #Definir  une fonction avec comme paramètres : chaineA et chaineB
 #qui retourne la concatenation de chaineA, une comma et enfin chaineB
 def concatWithComma(chaineA, chaineB):
@@ -113,6 +109,7 @@ def indexTableau(tableau,index):
     while i < len(tableau):
         #Alors si l'elt d'index i de tableau est egal a x
         if tableau[i] == index :
+            #Alors
             #Si je suis au premier tour ( si firstTurn est vrai)
             if firstTurn :
                 #Alors j'assigne str(i) a chaineResultat
@@ -128,7 +125,6 @@ def indexTableau(tableau,index):
     return chaineResultat
 
 
-print(conca("viande","frite"))
 print(indexTableau(tab,0))
 
 def affichage(ele):
@@ -144,10 +140,10 @@ listeUtilisateur = {
 
 def login(userName, password , listUser):
     if listUser[userName] == password :
-        print("good combo")
+        affichage("good combo")
         return
     else :
-        print("bad combo")
+        affichage("bad combo")
         return
 
-affichage(login("Alexandre", "motdepasse", listeUtilisateur))
+login("Alexandre", "motdepasse", listeUtilisateur)

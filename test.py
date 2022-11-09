@@ -19,6 +19,7 @@ def indexTableau(tableau,index):
     while i < len(tableau):
         #Alors si l'elt d'index i de tableau est egal a x
         if tableau[i] == index :
+            #Alors
             #Si je suis au premier tour ( si firstTurn est vrai)
             if firstTurn :
                 #Alors j'assigne str(i) a chaineResultat
