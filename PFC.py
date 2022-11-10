@@ -93,3 +93,5 @@
     #on affiche "le vainqueur est : " et vainqueur
 #fin fonction
 
+#on appelle la fonction PFC avec comme parametre 2 et 3
+
