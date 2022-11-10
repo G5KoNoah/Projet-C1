@@ -26,68 +26,56 @@
 
         #si choixJoueurA est égal a 0
             #alors
+            #on affiche nomJoueurA et le tableau avec comme indice choixJoueurA
+            #on affiche nomJoueurB et le tableau avec comme indice choixJoueurB
             #si choixJoueurB est égal a 0
                 #alors 
-                #on affiche nomJoueurA et le tableau avec comme indice choixJoueurA
-                #on affiche nomJoueurB et le tableau avec comme indice choixJoueurB
                 #on affiche "égalité"
 
             #si choixJoueurB est égal a 1
                 #alors 
                 #on incremente poinJoueurB de 1
-                #on affiche nomJoueurA et le tableau avec comme indice choixJoueurA
-                #on affiche nomJoueurB et le tableau avec comme indice choixJoueurB
                 #on affiche "le vainqueur de la manche est " et nomJoueurB
         
             #si choixJoueurB est égal a 2
                 #alors 
                 #on incremente poinJoueurA de 1
-                #on affiche nomJoueurA et le tableau avec comme indice choixJoueurA
-                #on affiche nomJoueurB et le tableau avec comme indice choixJoueurB
                 #on affiche "le vainqueur de la manche est " et nomJoueurA
 
         #sinon si choixJoueurA est égal a 1
             #alors
+            #on affiche nomJoueurA et le tableau avec comme indice choixJoueurA
+            #on affiche nomJoueurB et le tableau avec comme indice choixJoueurB
             #si choixJoueurB est égal a 1
                 #alors 
-                #on affiche nomJoueurA et le tableau avec comme indice choixJoueurA
-                #on affiche nomJoueurB et le tableau avec comme indice choixJoueurB
                 #on affiche "égalité"
 
             #si choixJoueurB est égal a 2
                 #alors 
                 #on incremente poinJoueurB de 1
-                #on affiche nomJoueurA et le tableau avec comme indice choixJoueurA
-                #on affiche nomJoueurB et le tableau avec comme indice choixJoueurB
                 #on affiche "le vainqueur de la manche est " et nomJoueurB
         
             #si choixJoueurB est égal a 0
                 #alors 
                 #on incremente poinJoueurA de 1
-                #on affiche nomJoueurA et le tableau avec comme indice choixJoueurA
-                #on affiche nomJoueurB et le tableau avec comme indice choixJoueurB
                 #on affiche "le vainqueur de la manche est " et nomJoueurA
         
         #sinon
             #alors
+            #on affiche nomJoueurA et le tableau avec comme indice choixJoueurA
+            #on affiche nomJoueurB et le tableau avec comme indice choixJoueurB
             #si choixJoueurB est égal a 2
                 #alors 
-                #on affiche nomJoueurA et le tableau avec comme indice choixJoueurA
-                #on affiche nomJoueurB et le tableau avec comme indice choixJoueurB
                 #on affiche "égalité"
 
             #si choixJoueurB est égal a 0
                 #alors 
                 #on incremente poinJoueurB de 1
-                #on affiche nomJoueurA et le tableau avec comme indice choixJoueurA
-                #on affiche nomJoueurB et le tableau avec comme indice choixJoueurB
                 #on affiche "le vainqueur de la manche est " et nomJoueurB
         
             #si choixJoueurB est égal a 1
                 #alors 
                 #on incremente poinJoueurA de 1
-                #on affiche nomJoueurA et le tableau avec comme indice choixJoueurA
-                #on affiche nomJoueurB et le tableau avec comme indice choixJoueurB
                 #on affiche "le vainqueur de la manche est " et nomJoueurA
             
 
